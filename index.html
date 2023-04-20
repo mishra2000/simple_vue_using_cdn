@@ -13,6 +13,8 @@
     <div id="sample_app">
         <input type="text" v-model="enteredValue"></input>
         <button v-on:click="addGoal">Add Item</button>
+        <button v-on:click="removeTopGoal">Remove Top Goal</button>
+        <button v-on:click="removeLastGoal">Remove Last Goal</button>
         <ul>
             <li v-for="goal in goals">{{goal}}</li>
         </ul>
@@ -30,6 +32,12 @@
             addGoal(){
                 this.goals.push(this.enteredValue);
                 this.enteredValue = '';
+            },
+            removeLastGoal(){
+                this.goals.pop();
+            },
+            removeTopGoal(){
+                this.goals.shift();
             }
         }
     }).mount("#sample_app")
