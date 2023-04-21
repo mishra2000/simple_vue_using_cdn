@@ -9,11 +9,11 @@ Vue.createApp({
             rand = Math.random()
             console.log(rand)
             if (rand < 0.33)
-                return "This is a random message"
+                return "<h3>This is a random message</h3>"
             else if(rand < 0.66)
-                return "This is second random message"
+                return "<h3>This is second random message</h3>"
             else
-                return "This is third random message"    
+                return "<h3>This is third random message</h3>"    
         }
     }
 }).mount("#user-goal");
