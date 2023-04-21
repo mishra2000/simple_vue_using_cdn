@@ -18,7 +18,7 @@
     </header>
     <section id="user-goal">
       <h2>My Course Goal</h2>
-      <p>{{ randomMessage() }}</p>
+      <p v-html="randomMessage()"></p>
       <p><a v-bind:href="redirect_link" target="_blank" style="font-style: normal;">Click to redirect</a></p>
     </section>
   </body>
