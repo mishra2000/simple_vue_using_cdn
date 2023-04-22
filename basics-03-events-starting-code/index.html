@@ -22,8 +22,8 @@
       <button v-on:click.left="reduce(5)">Remove 5</button>
       <p v-once >Initial Counter: {{ counter }}</p>
       <p>Result: {{ counter }}</p>
-      <input type="text" v-on:input="setName($event,'My name is: ')" placeholder="Enter your name here" v-on:keyup.enter="showCompleteName"/>
-      <p>{{ completeName }}</p>
+      <input type="text" v-on:input="setName($event,'My name is: ')" placeholder="Enter your name here"/>
+      <p>{{ showCompleteName }}</p>
     </section>
   </body>
 </html>
