@@ -2,7 +2,8 @@ const app = Vue.createApp({
   data() {
     return {
       counter: 0,
-      name: ''
+      name: '',
+      completeName: ''
     };
   },
   methods: {
@@ -14,6 +15,9 @@ const app = Vue.createApp({
     },
     setName(event, message){
       this.name = message + event.target.value
+    },
+    showCompleteName(){
+      this.completeName = this.name
     }
   }
 });
