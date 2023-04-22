@@ -3,7 +3,6 @@ const app = Vue.createApp({
     return {
       counter: 10,
       name: '',
-      completeName: ''
     };
   },
   methods: {
@@ -15,9 +14,13 @@ const app = Vue.createApp({
     },
     setName(event, message){
       this.name = message + event.target.value
-    },
+    }
+  },
+  computed: {
     showCompleteName(){
-      this.completeName = this.name
+      if(this.name.length==12 || this.name.length == 0)
+        return ''
+      return this.name + " Mishra"
     }
   }
 });
