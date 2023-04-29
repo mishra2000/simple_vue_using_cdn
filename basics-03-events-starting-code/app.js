@@ -16,6 +16,14 @@ const app = Vue.createApp({
       this.name = message + event.target.value
     }
   },
+  watch: {
+    counter(current_value){
+      if(current_value > 50)
+      {
+        this.counter = 0;
+      }
+    }
+  },
   computed: {
     showCompleteName(){
       if(this.name.length==12 || this.name.length == 0)
