@@ -24,10 +24,10 @@
       <p>Favorite Number: {{Math.floor(Math.random() * (max_random - min_random + 1) + min_random)}}</p>
       <div>
         <!-- 5) Display some image you found via Google -->
-        <img v-bind:src="image_url" />
+        <img :src="image_url" />
       </div>
       <!-- 6) Prepopulate the input field with your name via the "value" attribute -->
-      <input type="text" v-bind:value="populate_input_field()" disabled/>
+      <input type="text" :value="populate_input_field()" disabled/>
     </section>
   </body>
 </html>
