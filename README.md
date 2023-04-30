@@ -17,3 +17,5 @@ V-if really removes and adds elements from and to the DOM.<br />
 So it really impacts which elements are part of the DOM.<br />
 v-show on the other hand,<br />
 just hides and show items with CSS.<br />
+
+![Screenshot 2023-04-30 at 3 32 51 PM](https://user-images.githubusercontent.com/50536949/235347279-9030e86d-7e4d-4221-8271-ff50fa2ddf93.png)
