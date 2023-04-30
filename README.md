@@ -19,3 +19,4 @@ v-show on the other hand,<br />
 just hides and show items with CSS.<br />
 
 ![Screenshot 2023-04-30 at 3 32 51 PM](https://user-images.githubusercontent.com/50536949/235347279-9030e86d-7e4d-4221-8271-ff50fa2ddf93.png)
+![Screenshot 2023-04-30 at 9 24 52 PM](https://user-images.githubusercontent.com/50536949/235363103-f81dc4fa-b5cd-4c1f-9bee-b12a608591fe.png)
