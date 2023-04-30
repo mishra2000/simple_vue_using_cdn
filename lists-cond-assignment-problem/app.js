@@ -18,7 +18,7 @@ app = Vue.createApp({
     },
     methods: {
         addTask(){
-            this.tasks.push(this.inputTask);
+            this.tasks.push(this.$refs.userText.value);
             this.inputTask = '';
             console.log(this.tasks)
         },
