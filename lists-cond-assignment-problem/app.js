@@ -2,7 +2,6 @@ app = Vue.createApp({
     data(){
         return {
             tasks: [],
-            inputTask: '',
             showList: true,
             btnText: "Hide List"
         }
@@ -18,9 +17,8 @@ app = Vue.createApp({
     },
     methods: {
         addTask(){
-            this.tasks.push(this.inputTask);
-            this.inputTask = '';
-            console.log(this.tasks)
+            this.tasks.push(this.$refs.userText.value);
+            this.$refs.userText.value = '';
         },
         listVisibility(){
             this.showList = !this.showList
