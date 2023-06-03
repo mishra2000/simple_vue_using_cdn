@@ -1,31 +1,34 @@
-app = Vue.createApp({
+app = Vue.createApp()
+
+app.component('friend-contact',{
+    template: `
+    <li>
+        <h2>{{friend.name}}</h2>
+        <button @click="toggleHide">Show Details</button>
+        <ul v-if="friend.hidden">
+            <li><strong>Phone:</strong> {{friend.phone}}</li>
+            <li><strong>Email:</strong> {{friend.email}}</li>
+        </ul>
+    </li>
+    `,
     data(){
         return {
-            friends: [
-                {
-                    id: 0,
-                    name: "Utkarsh Mishra",
-                    phone: "9179069161",
-                    email: "thisismy#email.com",
-                    hidden: false,
-                },
-                {
-                    id: 1,
-                    name: "Amrita Mishra",
-                    phone: "9879069161",
-                    email: "thisisnotmy#email.com",
-                    hidden: false,
-                }
-            ]
+            friend: {
+                id: 0,
+                name: "Utkarsh Mishra",
+                phone: "9179069161",
+                email: "thisismy#email.com",
+                hidden: false,
+            }
         }
     },
     methods: {
-        toggleHide(id){
-            friend = this.friends[id]
-            friend.hidden = !friend.hidden
+        toggleHide(){
+            this.friend.hidden = !this.friend.hidden
         }
     }
 
 })
 
 app.mount("#app")
+
